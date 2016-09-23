@@ -80,3 +80,13 @@ misc:
 $ gem install rubocop
 $ rubocop
 ```
+
+## Dockerize installation
+
+```
+$ echo RAILS_ENV={developmenr|production}
+$ docker-compose build
+$ docker-compose run web rake db:create
+$ docker-compose run web rake db:migrate 
+$ docker-compose up
+```
