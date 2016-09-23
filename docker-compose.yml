@@ -7,6 +7,9 @@ services:
   web:
     environment:
       - RAILS_ENV
+      - SECRET_KEY_BASE
+      - RAILS_SERVE_STATIC_FILES
+      - RAILS_LOG_TO_STDOUT
     build: .
     command: bundle exec rails s -p 29180 -b '0.0.0.0'
     volumes:

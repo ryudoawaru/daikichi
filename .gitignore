@@ -28,3 +28,4 @@
 
 # Private data
 /lib/tasks/users.yml
+/.env

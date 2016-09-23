@@ -83,10 +83,12 @@ $ rubocop
 
 ## Dockerize installation
 
+-  Edit your .env file
+
 ```
-$ echo RAILS_ENV={developmenr|production}
 $ docker-compose build
 $ docker-compose run web rake db:create
 $ docker-compose run web rake db:migrate 
+$ docker-compose run web rake asset:precompile #if necessary
 $ docker-compose up
 ```
